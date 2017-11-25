@@ -57,4 +57,22 @@ h1 {
   float: left;
   margin: 15px; }
 
+.alert, .success, .warning, .oh-dang {
+  border: 1px solid #333;
+  margin: 10px 0;
+  padding: 15px;
+  text-transform: uppercase;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px; }
+
+.success {
+  background: #4CAF50; }
+
+.warning {
+  background: #fc3; }
+
+.oh-dang {
+  background: red; }
+
 /*# sourceMappingURL=app.css.map */
