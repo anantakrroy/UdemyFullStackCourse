@@ -32,6 +32,10 @@ app.get('/', function(request, response){
         }
     );
 
+app.get('/funions', function(request,response){
+    response.send('yo give me some funions!');
+});
+
 app.post('/', function(request, response){
    
     var ingredient = request.body;
