@@ -40,12 +40,14 @@ app.post('/', function(request, response){
    
     var ingredient = request.body;
     if (!ingredient || ingredient === "") {
-        response.status(500).send({error: "Your ingredient must be a text"});
+        response.status(500).send({error: "Your ingredient must not be empty"});
     } else {
         ingredients.push(ingredient);
         response.status(200).send (ingredients);
     }
 });
+
+app.put('')
 
 
 app.listen(3000, function() {
