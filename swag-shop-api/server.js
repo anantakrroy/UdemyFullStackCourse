@@ -1,6 +1,10 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+var db = mongoose.connect('mongodb://localhost/swag-shop-api');
+
+var Product = require('./model/product');
+var WishList = require('./model/product');
 
 var app = express();
 
